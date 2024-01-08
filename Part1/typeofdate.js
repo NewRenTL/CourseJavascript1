@@ -46,3 +46,11 @@ console.log(person.car)
 console.log(person['car'])
 console.log(person['car']['color'])
 
+// Null
+// Null is often used to specify that a value is null
+const nullVariable = null;
+
+//Undefined
+// Undefined is used to indicate that a value not is defined    
+const undefinedVariable = undefined;
+
