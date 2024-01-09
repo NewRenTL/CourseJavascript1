@@ -1,0 +1,11 @@
+{
+  "name": "javascriptcourse",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "node Part1/data_structures.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

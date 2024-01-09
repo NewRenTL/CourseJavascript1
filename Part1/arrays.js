@@ -81,6 +81,27 @@ console.log("How i can delete an element at an index of an array? Example: index
 let arrayWithoutElement = animals.slice(0,3).concat(animals.slice(3+1));
 console.log(animals)
 console.log(arrayWithoutElement)
+console.log("Fill: array(value,startIndex,endIndex)")
+let test_arr1 = animals.slice(0,animals.length)
+console.log(test_arr1)
+test_arr1.fill("cat",1,3)
+console.log(test_arr1)
+
+//Operator Spread
+function sumArgs(){
+    let sum = 0;
+    for(let i = 0; i < arguments.length ;i++)
+    {
+        sum+=arguments[i];
+    }
+    return sum;
+}
+
+console.log("Operator Spread (...): sumArgs(...array)")
+console.log("Sum Function with Spread Operator:"+ sumArgs(...[4,5,6]))
+let copyWithSpreadOperator = [...animals]
+console.log("Copy array with Spread Operator: "+copyWithSpreadOperator)
+
 
 separation_lines()
 console.log("Immutable Methods:")
@@ -109,6 +130,7 @@ console.log("IndexOf:")
 console.log(animals)
 let findElement = animals.indexOf('butterfly')
 console.log("Butterfly: Index "+ findElement)
+
 
 
 
